@@ -1,0 +1,6 @@
+  - name: create a user
+    user: 
+      name: john
+      comment: john Doe
+      group: wheel
+      password: "{{ pass }}"

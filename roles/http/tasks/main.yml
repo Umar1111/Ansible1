@@ -1,0 +1,11 @@
+
+  - name: installing httpd
+    yum: 
+      name: "{{ http_package }}"
+      state: latest
+      
+  - name: starting and enabling httpd
+    service:
+      name: "{{ http_package }}"
+      state: started
+      enabled: yes
